@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 20px;
+}
