@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="word.css">
   </head>
   <body>
-    <h1>Word Scramble Game</h1>
-    <p id="scrambled-word"></p>
-    <label for="user-input">Enter your guess:</label>
-    <input type="text" id="user-input">
-    <button onclick="checkGuess()">Submit</button>
-    <p id="message"></p>
-    <button onclick="newWord()">New Word</button>
+<header>
+  <p>Unscramble Pro
+  </p>
+</header>
+    <p class = "scrambled-word"></p>
+    <label class="word
+    " for="user-input"></label>
+    <input type="text" class="user-input">
+    <button class="check btn" onclick="checkGuess()">check</button>
+    <p class="message"></p>
+    <button class="reshuffle-btn btn">Reshuffle</button>
+    <div>  
+    <button class="restart next btn" onclick="newWord()"> Restart</button>
+  </div>
     <script src="word.js"></script>
   </body>
 </html>

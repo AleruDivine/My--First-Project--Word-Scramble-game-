@@ -1,7 +1,26 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F0F0F0;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+ @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+
+
+header{
+  font-family:'Press Start 2P', sans-serif;
 }
+
+ body {
+  font-family:'poppins', sans-serif;
+  color: #1f1d1d;
+  background-color: #eeedea;
+}
+
 
 h1 {
   text-align: center;
@@ -26,6 +45,9 @@ input[type="text"] {
   margin: 0 auto;
   font-size: 20px;
   padding: 5px;
+  border: none;
+  background-color: #dfdfdf;
+  border-radius: 0.5rem;
 }
 
 button {
@@ -35,3 +57,100 @@ button {
   padding: 5px;
   margin-top: 20px;
 }
+
+.btn {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  background-color:#3287a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Righteous';
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #aba6a6;
+  color: #000;
+} 
+.next {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+ /* body {
+  font-family: 'Moo Lah Lah', sans-serif;
+  background-color: #2a262b;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #815f52;
+  text-shadow: 2px 2px #ddc69d;
+  font-size: 60px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #696969;
+  text-shadow: 1px 1px #F0F8FF;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  color: #584420;
+  text-shadow: 2px 2px #FFFACD;
+font-family: 'Offside' ;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #F0FFF0;
+  border: 2px solid #008000;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #A0522D;
+}
+
+button:hover {
+  background-color: #FF8C00;
+  cursor: pointer;
+}
+
+#scrambled-word {
+  font-size: 40px;
+  color: #312e2e;
+  text-shadow: 1px 1px #FFFFFF;
+  font-family: 'Offside' 
+}
+
+#message {
+  font-size: 30px;
+  color: #0d0b0b;
+  text-shadow: 1px 1px #F5DEB3;
+  font-family: 'Press Start 2P';
+} */

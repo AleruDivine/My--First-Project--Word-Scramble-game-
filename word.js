@@ -1,4 +1,4 @@
-const words = ['javascript', 'html', 'css', 'react', 'angular', 'vue', 'node', 'express', 'mongo', 'sql'];
+const words = ['mine', 'phone', 'man', 'dangerous', 'damage', 'compact', 'mascot', 'near', 'wednesday', 'world', 'envelope', 'owl', 'newborn', 'food', 'gender', 'dark', 'board', 'law','tennis','jackpot'];
 let scrambledWord = '';
 let chosenWord = '';
 
@@ -16,14 +16,31 @@ function scrambleWord(word) {
     letters[j] = temp;
   }
   scrambledWord = letters.join('');
-  document.getElementById('scrambled-word').innerHTML = scrambledWord;
+  document.querySelector('.scrambled-word').innerHTML = scrambledWord;
 }
 
 function checkGuess() {
-  let guess = document.getElementById('user-input').value;
+  let guess = document.querySelector('.user-input').value;
   if (guess === chosenWord) {
-    document.getElementById('message').innerHTML = 'Congratulations, you got it right!';
+    document.querySelector('.message').innerHTML = 'Correct!🎉🥳🎊';
+    document.querySelector('body').style.backgroundColor = '#';
   } else {
-    document.getElementById('message').innerHTML = 'Sorry, try again.';
+    document.querySelector('.message').innerHTML = 'Sorry, try again.';
   }
 }
+
+
+function restartGame() {
+  document.querySelector('.user-input').value = '';
+  document.querySelector('.message').innerHTML = '';
+}
+
+
+function reshuffleWord() {
+  scrambleWord(chosenWord);
+}
+
+document.querySelector('.reshuffle-btn').addEventListener('click', reshuffleWord);
+document.querySelector('.restart').addEventListener('click', restartGame);
+
+
