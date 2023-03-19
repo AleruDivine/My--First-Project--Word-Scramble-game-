@@ -28,7 +28,10 @@ function checkGuess() {
     document.querySelector('.message').innerHTML = 'Sorry, try again.';
   }
 }
-
+function startGame() {
+  document.querySelector('.user-input').value = '';
+  document.querySelector('.message').innerHTML = '';
+}
 
 function restartGame() {
   document.querySelector('.user-input').value = '';
@@ -43,4 +46,4 @@ function reshuffleWord() {
 document.querySelector('.reshuffle-btn').addEventListener('click', reshuffleWord);
 document.querySelector('.restart').addEventListener('click', restartGame);
 
-
+document.querySelector('.start').addEventListener('click', startGame);
